@@ -3,7 +3,7 @@ function generarNumeroAleatorio() {
     return Math.floor(Math.random() * 100) + 1;
 }
 
-// Función del juego
+// Función principal del juego
     function jugarAdivinanza() {
     const numeroAleatorio = generarNumeroAleatorio();
     let intentos = 0;
@@ -23,7 +23,7 @@ function generarNumeroAleatorio() {
         } else if (intento > numeroAleatorio) {
           alert("El número es menor.");
         } else {
-          alert("¡Correcto! Adivinaste el número ${numeroAleatorio} en ${intentos} intentos.");
+          alert(`¡Correcto! Adivinaste el número ${numeroAleatorio} en ${intentos} intentos.`);
           numeroAdivinado = true;
         }
       }
